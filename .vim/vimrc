@@ -1,0 +1,78 @@
+set nocompatible " Remove vi compatibility
+
+set termguicolors
+
+set rtp+=/usr/local/opt/fzf
+
+runtime bundle/vim-pathogen/autoload/pathogen.vim
+call pathogen#infect()
+call pathogen#helptags()
+
+filetype indent plugin on " Switch on filetype, plugin and indent
+
+syntax enable " Enable syntax highlight
+
+set mouse=a " Enable mouse in terminal
+
+set number " Set line numbers
+" set relativenumber " Set relative line numbers
+set ai " Set auto indent 
+set incsearch " Switch on incremental search
+set hlsearch " Highlight the searches
+
+set expandtab " Expand tabs to spaces
+set tabstop=4 " Set tab equal to 4 spaces
+set softtabstop=4 " Set tab equal to 4 spaces
+set shiftwidth=4 " Set number of spaces required for indent equal to 4 spaces
+set linespace=5 " Set linespace equal to 5
+
+" Use only hjkl keys !
+" noremap <Up> <nop>
+" noremap <Down> <nop>
+" noremap <Left> <nop>
+" noremap <Right> <nop>
+
+" Stuff below is used in some systems to enable default backspace key behavior
+set backspace=2
+" set backspace=indent,eol,start
+" End of stuff for backspace key behavior
+
+" Use * register for yank, delete, paste operations
+set clipboard=unnamed
+
+" Map Ctrl-a to select the entire text
+nnoremap <C-a> ggVG
+
+" Map Y to yank a line excluding the newline, similar to D
+nnoremap Y 0y$
+
+
+set laststatus=2 " Always enable the statusline
+set noshowmode " Remove the mode type that appears at the last line of the screen
+set wildmenu
+
+" let g:solarized_termcolors=16
+set t_Co=256
+
+" Change cursor shaped between insert and normal mode
+" let &t_SI.="\e[5 q"
+" let &t_EI.="\e[1 q"
+
+" Netrw stuff
+" let g:netrw_banner=0
+" let g:netrw_liststyle=3
+" let g:netrw_browse_split=2
+" let g:netrw_winsize=25
+" End of Netrw stuff
+
+" Set ttimeoutlen so that change in statusline modes in terminal vim is instantaneous
+set ttimeoutlen=50
+
+" Create a new window to right of existing window
+set splitright
+
+
+let g:NERDTreeWinSize=25
+
+let mapleader=","
+map <Leader>t :NERDTreeToggle<CR>
