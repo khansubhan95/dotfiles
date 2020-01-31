@@ -7,13 +7,16 @@ alias desk='cd ~/Desktop'
 alias :wq='exit'
 alias ll='ls -la'
 alias grep='grep --color=auto'
+alias bashconfig='gvim ~/.bashrc'
+alias vimconfig='gvim ~/.vim/vimrc'
+
+# Git aliases
+
 alias gaa='git add --all'
 alias gcmsg='git commit -m'
 alias ggp='git push origin $(git_current_branch)'
 alias gcl='git clone'
 
-alias bashconfig='gvim ~/.bashrc'
-alias vimconfig='gvim ~/.vim/vimrc'
 
 export CLICOLOR=1
 export LSCOLORS=ExGxBxDxCxEgEdxbxgxcxd

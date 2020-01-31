@@ -94,9 +94,24 @@ source $ZSH/oh-my-zsh.sh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
+
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+alias zshconfig="mate ~/.zshrc"
+alias ohmyzsh="mate ~/.oh-my-zsh"
+alias desk='cd ~/Desktop'
+alias :wq='exit'
+alias ll='ls -la'
+alias grep='grep --color=auto'
+alias bashconfig='gvim ~/.bashrc'
+alias vimconfig='gvim ~/.vim/vimrc'
+
+# Git aliases
+alias gaa='git add --all'
+alias gcmsg='git commit -m'
+alias ggp='git push origin $(git_current_branch)'
+alias gcl='git clone'
+
+
 
 # fzf via Homebrew
 if [ -e /usr/local/opt/fzf/shell/completion.zsh ]; then
