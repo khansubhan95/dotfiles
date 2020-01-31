@@ -3,6 +3,7 @@
 ln -sf ~/.dotfiles/.vim ~/.vim
 ln -sf ~/.dotfiles/.bashrc  ~/.bashrc
 ln -sf ~/.dotfiles/.zshrc ~/.zshrc
+ln -sf ~/.dotfiles/.gitconfig ~/.gitconfig
 
 dir=~/.dotfiles/z
 
