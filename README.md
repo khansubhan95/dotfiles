@@ -1,6 +1,6 @@
 # 💾 Dotfiles
 
-These are my dotfiles. I use bash, vim and git in my daily workflow.
+These are my dotfiles. I use zsh(on my local Mac), bash(on remote Linux boxes), vim and git in my daily workflow.
 
 ## Installation
 
