@@ -76,3 +76,5 @@ let g:NERDTreeWinSize=25
 
 let mapleader=","
 map <Leader>t :NERDTreeToggle<CR>
+command Marked :silent !open -a Marked\ 2.app '%:p'
+:nnoremap <leader>m :silent !open -a Marked\ 2.app '%:p'<cr>

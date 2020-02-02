@@ -68,7 +68,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git sudo) 
 
 source $ZSH/oh-my-zsh.sh
 
@@ -104,6 +104,7 @@ alias ll='ls -la'
 alias grep='grep --color=auto'
 alias bashconfig='gvim ~/.bashrc'
 alias vimconfig='gvim ~/.vim/vimrc'
+alias marked='open -a Marked\ 2'
 
 # Git aliases
 alias gaa='git add --all'
